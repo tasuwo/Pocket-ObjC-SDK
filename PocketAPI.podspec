@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '3.0'
   s.osx.deployment_target = '10.6'
 
-  s.source_files = 'SDK/**/*.{h,m}'
+  s.source_files = 'SDK/**/PocketAPI*.{h,m}'
 
   s.public_header_files = 'SDK/**/PocketAPI*.h'
 
@@ -26,4 +26,5 @@ Pod::Spec.new do |s|
 
   s.requires_arc = false
 
+  s.dependency 'SFHFKeychainUtils', '0.0.1'
 end
